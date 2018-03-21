@@ -1,0 +1,159 @@
+/*--->>Colors
+#3CA2DF light blue
+#1CC4A6 green
+#3B5369 dark blue
+
+----------------------*/
+
+html {
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Lato', sans-serif;
+}
+
+.white-text {
+  color: #ffffff;
+}
+
+hr {
+  background-color: #e5e5e5;
+  border-width: 0;
+  color: #b1b1b1;
+  height: 1px;
+  line-height: 0;
+  margin: 10px 0 30px 0;
+  text-align: center;
+  width: 100%;
+}
+
+hr.card-divider {
+  background-color: #e5e5e5;
+  border-width: 0;
+  color: #b1b1b1;
+  height: 1px;
+  line-height: 0;
+  margin: 20px 0 20px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.jumbotron {
+  background: linear-gradient(to bottom right, #3CA2DF, #1CC4A6);
+}
+
+.typography-line {
+    padding-left: 20%;
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.typography-line span {
+    bottom: 10px;
+    color: #242424;
+    display: block;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+    left: 0;
+    margin-left: 20px;
+    position: absolute;
+    width: 260px;
+    text-transform: none;
+}
+
+.card-title {
+  margin: 0 0 5px 0;
+  color: #242424;
+}
+
+.card-text {
+  margin: 0 0 5px 0;
+  color: #222222;
+  line-height: 1.2rem;
+}
+
+.card-footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.text-muted {
+  color: #999999!important;
+}
+
+/*--Buttons--*/
+
+.btn-primary {
+  color: white;
+  padding: 10px;
+  margin: 10px 0 0 0;
+  background-color: #3498db;
+  border: 0px solid #3498db;
+  font-size: 14px;
+  width: 125px;
+  text-align: center;
+  border-radius: 5px;
+  transition-property: background-color 0.3s ease;
+  transition-duration: 400ms;
+}
+
+.btn-primary:hover {
+  background-color: #72CAFF;
+}
+
+/*--Icons--*/
+
+.fas {
+  color: #95949a;
+  transition: color 0.3s ease;
+  font-size: 20px;
+}
+
+.fas:hover {
+  color: #1CC4A6;
+}
+
+/*--Pagination--*/
+.page-link {
+  color: #3CA2DF;
+  font-size: 14px;
+}
+
+.page-link:hover {
+  color: #72CAFF;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #ffffff;
+    background-color: #3CA2DF;
+    border-color: #3CA2DF;
+}
+
+.active {
+  color: #72CAFF;
+}
+
+/*--Follower Card--*/
+
+.avatar {
+    display: flex;
+    position: relative;
+    top: -50px;
+    margin-bottom: -50px;
+}
+
+.avatar img {
+    width: 100px;
+    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid rgba(255,255,255,0.5);
+}
