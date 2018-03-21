@@ -71,7 +71,7 @@ hr.card-divider {
 }
 
 .card-text {
-  margin: 0 0 5px 0;
+  margin: 0 0 0px 0;
   color: #222222;
   line-height: 1.2rem;
 }
@@ -114,7 +114,7 @@ hr.card-divider {
 }
 
 .fas:hover {
-  color: #1CC4A6;
+  color: #3CA2DF;
 }
 
 /*--Pagination--*/
@@ -155,5 +155,23 @@ hr.card-divider {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    border: 5px solid rgba(255,255,255,0.5);
+    border: 5px solid rgba(230,230,230,0.5);
+}
+
+
+.avatar-mobile {
+    display: inline-block;
+    max-width: 20%;
+    margin-right: 20px;
+}
+
+.avatar-mobile img {
+    width: 50px;
+    height: 50px;
+    max-width: 50px;
+    max-height: 50px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 3px solid rgba(200,200,200,0.5);
 }
