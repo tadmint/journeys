@@ -65,6 +65,9 @@ hr.card-divider {
     text-transform: none;
 }
 
+/*--Cards--*/
+
+
 .card-title {
   margin: 0 0 5px 0;
   color: #242424;
@@ -84,6 +87,38 @@ hr.card-divider {
 .text-muted {
   color: #999999!important;
 }
+
+/*--Breadcrumbs--*/
+
+.breadcrumb-item+.breadcrumb-item::before {
+  color: #999999;
+  padding-right: .25rem;
+  padding-left: .25rem;
+}
+
+.breadcrumb {
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 5px;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.breadcrumb-item {
+  font-size: 0.8125rem;
+}
+
+a:hover {
+  color: #72CAFF;
+}
+
+a {
+  color: #3CA2DF;
+}
+
+li.breadcrumb-item.active {
+  color: #999999;
+}
+
 
 /*--Buttons--*/
 
