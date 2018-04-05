@@ -10,13 +10,46 @@ html {
   font-weight: 500;
 }
 
+body {
+  background-color: #f5f5f5;
+}
+
 h1, h2, h3, h4, h5, h6, p {
   font-family: 'Lato', sans-serif;
+  color: #242424;
+}
+
+h1 {
+  font-size: 3.375rem;
+}
+
+h2 {
+  font-size: 2.8125rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.small-text {
+  font-size: 0.875rem;
+}
+
+p {
+  font-size: 16px;
 }
 
 .white-text {
   color: #ffffff;
 }
+
+.white-background {
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #dddddd;
+  padding: 30px 20px;
+}
+
 
 hr {
   background-color: #e5e5e5;
@@ -86,6 +119,7 @@ hr.card-divider {
 
 .text-muted {
   color: #999999!important;
+  font-size: 12px;
 }
 
 /*--Breadcrumbs--*/
@@ -124,12 +158,11 @@ li.breadcrumb-item.active {
 
 .btn-primary {
   color: white;
-  padding: 10px;
+  padding: 10px 15px;
   margin: 10px 0 0 0;
   background-color: #3498db;
   border: 0px solid #3498db;
   font-size: 14px;
-  width: 125px;
   text-align: center;
   border-radius: 5px;
   transition-property: background-color 0.3s ease;
@@ -209,4 +242,78 @@ li.breadcrumb-item.active {
     -moz-border-radius: 50%;
     border-radius: 50%;
     border: 3px solid rgba(200,200,200,0.5);
+}
+
+/*--Floating Labels--*/
+
+
+:root {
+  --input-padding-x: .75rem;
+  --input-padding-y: .75rem;
+}
+
+
+.form-control {
+  width: 100%;
+}
+
+.form-signin {
+  width: 100%;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-label-group > input,
+.form-label-group > label {
+  padding: var(--input-padding-y) var(--input-padding-x);
+}
+
+.form-label-group > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0; /* Override default `<label>` margin */
+  color: #b1b1b0;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  transition: all .1s ease-in-out;
+}
+
+.form-label-group input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-moz-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::placeholder {
+  color: transparent;
+}
+
+.form-label-group input:not(:placeholder-shown) {
+  padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+  padding-bottom: calc(var(--input-padding-y) / 3);
+}
+
+.form-label-group input:not(:placeholder-shown) ~ label {
+  padding-top: calc(var(--input-padding-y) / 3);
+  padding-bottom: calc(var(--input-padding-y) / 3);
+  font-size: 12px;
+  color: #b1b1b0;
 }
