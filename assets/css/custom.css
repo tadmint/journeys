@@ -181,7 +181,29 @@ li.breadcrumb-item.active {
   font-size: 20px;
 }
 
-.fas:hover {
+.fas-small {
+  color: #95949a;
+  transition: color 0.3s ease;
+  font-size: 14px;
+}
+
+.fas:hover, .fas-small:hover {
+  color: #3CA2DF;
+}
+
+.far {
+  color: #95949a;
+  transition: color 0.3s ease;
+  font-size: 20px;
+}
+
+.far-small {
+  color: #95949a;
+  transition: color 0.3s ease;
+  font-size: 14px;
+}
+
+.far:hover {
   color: #3CA2DF;
 }
 
